@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wir zwei 💕</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💕</text></svg>">
+</head>
+<body>
+  <div id="hearts" aria-hidden="true"></div>
+
+  <header class="hero">
+    <p class="kicker">Die Geschichte von</p>
+    <h1>
+      <span data-ich>Dein Name</span>
+      <span class="amp"><span class="beat">♥</span></span>
+      <span data-sie>Ihr Name</span>
+    </h1>
+    <p class="sub">Zwei Herzen, eine kleine Welt.</p>
+    <a class="scroll-hint" href="#zeit">↓</a>
+  </header>
+
+  <main>
+    <section id="zeit" class="card reveal">
+      <h2>Zusammen seit <span id="seit-datum"></span></h2>
+      <div class="counter">
+        <div><b id="c-tage">0</b><small>Tage</small></div>
+        <div><b id="c-std">0</b><small>Stunden</small></div>
+        <div><b id="c-min">0</b><small>Minuten</small></div>
+        <div><b id="c-sek">0</b><small>Sekunden</small></div>
+      </div>
+      <p class="note">…und jede einzelne davon war es wert. 💞</p>
+    </section>
+
+    <section id="geschichte">
+      <h2 class="reveal">Unsere Geschichte</h2>
+      <ol id="timeline" class="timeline"></ol>
+    </section>
+
+    <section id="momente">
+      <h2 class="reveal">Lieblingsmomente</h2>
+      <div id="gallery" class="gallery"></div>
+    </section>
+
+    <section id="gruende" class="card reveal">
+      <h2>Warum ich dich liebe</h2>
+      <p id="reason-text" class="reason">Drück auf den Knopf… 🥰</p>
+      <button id="reason-btn" class="btn">Noch ein Grund 💖</button>
+    </section>
+
+    <section id="brief" class="reveal">
+      <h2>Ein Brief für <span data-sie>dich</span></h2>
+      <button id="envelope" class="envelope" aria-expanded="false" aria-label="Brief öffnen">
+        <span class="env-back"></span>
+        <span class="letter"><span id="letter-text"></span><span class="sign">– <span data-ich></span></span></span>
+        <span class="env-front"></span>
+        <span class="env-flap"></span>
+        <span class="seal">♥</span>
+      </button>
+      <p class="note">Tippe auf den Umschlag ✉️</p>
+    </section>
+  </main>
+
+  <footer>
+    Mit ganz viel ♥ gemacht von <span data-ich></span> für <span data-sie></span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
