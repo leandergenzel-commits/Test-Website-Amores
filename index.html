@@ -14,13 +14,14 @@
   <div id="hearts" aria-hidden="true"></div>
 
   <header class="hero">
+    <div class="hero-photo"><img src="bilder/lovcen.jpg" alt="Indi und Martini"></div>
     <p class="kicker">Die Geschichte von</p>
     <h1>
       <span data-ich>Dein Name</span>
       <span class="amp"><span class="beat">♥</span></span>
       <span data-sie>Ihr Name</span>
     </h1>
-    <p class="sub">Zwei Herzen, eine kleine Welt.</p>
+    <p class="sub">Rathenow 🇩🇪 ♥ Ponte Caffaro 🇮🇹</p>
     <a class="scroll-hint" href="#zeit">↓</a>
   </header>
 
@@ -54,16 +55,34 @@
 
     <section id="brief" class="reveal">
       <h2>Ein Brief für <span data-sie>dich</span></h2>
-      <button id="envelope" class="envelope" aria-expanded="false" aria-label="Brief öffnen">
+      <button id="envelope" class="envelope" aria-expanded="false" aria-controls="letter" aria-label="Brief öffnen">
         <span class="env-back"></span>
-        <span class="letter"><span id="letter-text"></span><span class="sign">– <span data-ich></span></span></span>
+        <span class="letter-peek">Für <span data-sie></span> ♥</span>
         <span class="env-front"></span>
         <span class="env-flap"></span>
         <span class="seal">♥</span>
       </button>
-      <p class="note">Tippe auf den Umschlag ✉️</p>
+      <p id="envelope-hint" class="note">Tippe auf den Umschlag ✉️</p>
+      <div id="letter" class="letter">
+        <div class="letter-inner">
+          <p id="letter-text"></p>
+          <p class="tick-label">Bitte ankreuzen:</p>
+          <div class="ticks">
+            <button id="opt-auch" class="tick" aria-pressed="false"><span class="box"></span> Auch 🗣️❤️</button>
+            <button id="opt-nicht" class="tick"><span class="box"></span> Nicht</button>
+          </div>
+          <p id="answer" class="answer" aria-live="polite"></p>
+          <span class="sign">– Dein <span data-ich></span></span>
+        </div>
+      </div>
     </section>
   </main>
+
+  <div id="lightbox" class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Großansicht">
+    <button class="lb-close" aria-label="Schließen">✕</button>
+    <div id="lb-content"></div>
+    <p id="lb-caption"></p>
+  </div>
 
   <footer>
     Mit ganz viel ♥ gemacht von <span data-ich></span> für <span data-sie></span>

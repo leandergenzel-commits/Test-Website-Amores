@@ -1,6 +1,6 @@
 # Test-Website-Amores 💕
 
-Eine kleine, süße Website über uns zwei – reines HTML/CSS/JS, kein Build nötig.
+Eine kleine, süße Website über Indi & Martini – reines HTML/CSS/JS, kein Build nötig.
 
 ## Anschauen
 Einfach `index.html` im Browser öffnen.
@@ -12,7 +12,9 @@ Alles Persönliche steht oben in **`script.js`** im `CONFIG`-Block:
 - `zusammenSeit` – euer Jahrestag (`JJJJ-MM-TT`), daraus läuft der Live-Zähler
 - `geschichte` – Stationen eurer Timeline
 - `gruende` – „Warum ich dich liebe“ (zufällig per Knopfdruck)
-- `momente` – Polaroids; Fotos in `bilder/` legen und z. B. `{ bild: "bilder/strand.jpg", text: "Urlaub" }` eintragen
+- `momente` – Polaroids; Fotos in `bilder/`, Videos (MP4/H.264) in `videos/` legen und z. B.
+  `{ bild: "bilder/strand.jpg", text: "Urlaub", ort: "Italien", datum: "08.2026" }` bzw.
+  `{ video: "videos/clip.mp4", poster: "videos/clip.jpg", text: "…" }` eintragen
 - `brief` – der Liebesbrief im Umschlag
 
 ## Online stellen
