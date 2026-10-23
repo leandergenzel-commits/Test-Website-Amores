@@ -226,6 +226,24 @@ header, main, footer { position: relative; z-index: 1; }
 .answer { min-height: 1.6em; margin: 0.8rem 0 0; font-weight: 700; color: #d94a77; }
 .sign { display: block; font-family: "Dancing Script", cursive; font-size: 1.7rem; text-align: right; margin-top: 0.5rem; }
 
+/* ---------- Celebration ---------- */
+.celebrate {
+  position: fixed; inset: 0; z-index: 30; overflow: hidden; cursor: pointer;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  background: radial-gradient(circle, rgba(255, 179, 200, 0.55), rgba(255, 107, 154, 0.25));
+  animation: fadeOut 4.8s ease forwards;
+}
+.big-heart { font-size: clamp(7rem, 35vw, 14rem); animation: bigBeat 0.9s ease-in-out infinite; line-height: 1; }
+.celebrate p {
+  font-family: "Dancing Script", cursive; font-size: clamp(2.4rem, 10vw, 4rem); color: #fff; margin: 0.5rem 0 0;
+  text-shadow: 0 3px 12px rgba(217, 74, 119, 0.7);
+}
+.rain { position: absolute; top: -50px; animation: rain linear forwards; }
+@keyframes rain { to { transform: translateY(110vh) rotate(360deg); } }
+@keyframes bigBeat { 0%, 100% { transform: scale(1); } 30% { transform: scale(1.25); } 60% { transform: scale(1.05); } }
+@keyframes fadeOut { 0%, 80% { opacity: 1; } 100% { opacity: 0; } }
+.tick:disabled { opacity: 0.4; cursor: default; }
+
 /* ---------- Lightbox ---------- */
 .lightbox {
   position: fixed; inset: 0; z-index: 20; background: rgba(40, 15, 25, 0.88);
